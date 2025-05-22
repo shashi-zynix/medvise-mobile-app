@@ -38,6 +38,12 @@ const Sidebar = ({ isVisible, userInfo }: SidebarProps) => {
       screen: 'Transcribe' 
     },
     { 
+      id: 'testAudio', 
+      title: 'Test Voice to Text', 
+      icon: require('../assets/audio-recording.png'),
+      screen: 'TestAudio' 
+    },
+    { 
       id: 'appointments', 
       title: 'Appointments', 
       icon: require('../assets/appointment.png'),

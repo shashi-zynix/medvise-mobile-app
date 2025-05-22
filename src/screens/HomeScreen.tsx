@@ -240,6 +240,14 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
             style={styles.button}
             textStyle={{ color: Colors.secondary }}
           />
+          
+          <Button
+            title="Test Voice to Text"
+            onPress={() => navigation.navigate('TestAudio')}
+            variant="outline"
+            style={{...styles.button, backgroundColor: '#f0f8ff', borderColor: Colors.primary}}
+            textStyle={{ color: Colors.primary }}
+          />
         </View>
         
         <TouchableOpacity 

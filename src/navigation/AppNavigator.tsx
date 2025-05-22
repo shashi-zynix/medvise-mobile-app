@@ -7,6 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import TranscribeScreen from '../screens/TranscribeScreen';
 import AppointmentScreen from '../screens/AppointmentScreen';
+import TestAudioScreen from '../screens/TestAudioScreen';
 import OnboardingScreen from '../screens/onboarding/OnboardingScreen';
 import Header from '../components/Header';
 import {useSidebar} from '../context/SidebarContext';
@@ -27,6 +28,7 @@ export type RootStackParamList = {
     appointmentId?: string;
     recordId?: string;
   };
+  TestAudio: undefined;
   Appointments: undefined;
 };
 
@@ -78,6 +80,11 @@ const AppNavigator = () => {
         <Stack.Screen
           name="Appointments"
           component={AppointmentScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="TestAudio"
+          component={TestAudioScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
